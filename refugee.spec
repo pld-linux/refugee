@@ -2,11 +2,25 @@ Summary:	File encryption utility
 Summary(pl):	Narzêdzie do szyfrowania plików
 Name:		refugee
 Version:	0.99
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/File
+Group(cs):	Aplikace/Práce se soubory
+Group(da):	Programmer/Filer
 Group(de):	Applikationen/Datei
+Group(es):	Aplicaciones/Archivos
+Group(fr):	Applications/Fichiers
+Group(is):	Forrit/Skráatól
+Group(it):	Applicazioni/File
+Group(ja):	¥¢¥×¥ê¥±¡¼¥·¥ç¥ó/¥Õ¥¡¥¤¥ë
+Group(no):	Applikasjoner/Fil
 Group(pl):	Aplikacje/Pliki
+Group(pt):	Aplicações/Ficheiros
+Group(pt_BR):	Aplicações/Arquivos
+Group(ru):	ğÒÉÌÏÖÅÎÉÑ/æÁÊÌÏ×ÙÅ ÕÔÉÌÉÔÙ
+Group(sl):	Programi/Datoteke
+Group(sv):	Tillämpningar/Fil
+Group(uk):	ğÒÉËÌÁÄÎ¦ ğÒÏÇÒÁÍÉ/æÁÊÌÏ×¦ ÕÔÉÌ¦ÔÉ
 Source0:	http://www.synack.com/src/%{name}-%{version}.tar.gz
 BuildRequires:	libpng-devel
 URL:		http://www.synack.com/soft.html
