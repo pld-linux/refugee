@@ -5,22 +5,6 @@ Version:	0.99
 Release:	2
 License:	GPL
 Group:		Applications/File
-Group(cs):	Aplikace/PrАce se soubory
-Group(da):	Programmer/Filer
-Group(de):	Applikationen/Datei
-Group(es):	Aplicaciones/Archivos
-Group(fr):	Applications/Fichiers
-Group(is):	Forrit/SkrАatСl
-Group(it):	Applicazioni/File
-Group(ja):	╔╒╔в╔Й╔╠║╪╔╥╔Г╔С/╔у╔║╔╓╔К
-Group(no):	Applikasjoner/Fil
-Group(pl):	Aplikacje/Pliki
-Group(pt):	AplicaГУes/Ficheiros
-Group(pt_BR):	AplicaГУes/Arquivos
-Group(ru):	Приложения/Файловые утилиты
-Group(sl):	Programi/Datoteke
-Group(sv):	TillДmpningar/Fil
-Group(uk):	Прикладн╕ Програми/Файлов╕ утил╕ти
 Source0:	http://www.synack.com/src/%{name}-%{version}.tar.gz
 BuildRequires:	libpng-devel
 URL:		http://www.synack.com/soft.html
