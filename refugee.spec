@@ -32,7 +32,7 @@ umo¿liwia ukrywanie danych u¿ytkownika w plikach PNG.
 
 %build
 ./setup.sh
-%{__make} CFLAGS="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS} -IRijndael \
+%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -IRijndael \
 	-funroll-loops -fomit-frame-pointer \
 	-fno-strength-reduce -ffast-math" \
 	PNG_LIB="-lpng"
