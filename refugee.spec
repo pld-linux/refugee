@@ -2,12 +2,12 @@ Summary:	File encryption utility
 Summary(pl):	Narzêdzie do szyfrowania plików
 Name:		refugee
 Version:	0.99
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/File
 Source0:	http://www.synack.com/src/%{name}-%{version}.tar.gz
-BuildRequires:	libpng-devel
 URL:		http://www.synack.com/soft.html
+BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,7 +31,7 @@ umo¿liwia ukrywanie danych u¿ytkownika w plikach PNG.
 %build
 ./setup.sh
 %{__make} CFLAGS="%{rpmcflags} -IRijndael \
-	-funroll-loops -fomit-frame-pointer \
+	%{!?debug:-funroll-loops -fomit-frame-pointer} \
 	-fno-strength-reduce -ffast-math" \
 	PNG_LIB="-lpng"
 
@@ -44,12 +44,16 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 	INSTALL_ROOT=$RPM_BUILD_ROOT \
 	bindir=%{_bindir}
 
-gzip -9nf BUGS CHANGES CRYPTO README TODO
+# names are too common...
+cd $RPM_BUILD_ROOT%{_bindir}
+for f in decrypt encrypt hide key ; do
+	mv -f $f refugee-$f
+done
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc BUGS CHANGES CRYPTO README TODO
 %attr(755,root,root) %{_bindir}/*
