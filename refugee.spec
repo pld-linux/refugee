@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Applications/File
 Source0:	http://www.synack.com/src/%{name}-%{version}.tar.gz
+# Source0-md5:	ff2ec23b49bdc7f9d73abe1f8a8c9cb3
 URL:		http://www.synack.com/soft.html
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
