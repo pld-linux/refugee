@@ -1,5 +1,5 @@
 Summary:	File encryption utility
-Summary(pl):	Narzêdzie do szyfrowania plików
+Summary(pl.UTF-8):   NarzÄ™dzie do szyfrowania plikÃ³w
 Name:		refugee
 Version:	0.99
 Release:	3
@@ -18,13 +18,13 @@ little-endian platforms. It supports key sizes from 32-448 bits and
 gives the user many ways to make keys. It currently supports hiding
 user data in PNG files.
 
-%description -l pl
-Refugee to narzêdzie do szyfrowania plików i steganografii.
+%description -l pl.UTF-8
+Refugee to narzÄ™dzie do szyfrowania plikÃ³w i steganografii.
 Implementuje algorytmy Blowfish i Rijndael w trybie CBC i jest
-przeno¶ny miêdzy platformami typu big- i little-endian. Mo¿e korzystaæ
-z kluczy od 32 do 448 bitów, daj±c przy tym u¿ytkownikowi wiele
-róznych sposobów na stworzenie klucza. W chwili obecnej refugee
-umo¿liwia ukrywanie danych u¿ytkownika w plikach PNG.
+przenoÅ›ny miÄ™dzy platformami typu big- i little-endian. MoÅ¼e korzystaÄ‡
+z kluczy od 32 do 448 bitÃ³w, dajÄ…c przy tym uÅ¼ytkownikowi wiele
+rÃ³znych sposobÃ³w na stworzenie klucza. W chwili obecnej refugee
+umoÅ¼liwia ukrywanie danych uÅ¼ytkownika w plikach PNG.
 
 %prep
 %setup  -q
