@@ -1,5 +1,5 @@
 Summary:	File encryption utility
-Summary(pl.UTF-8):   Narzędzie do szyfrowania plików
+Summary(pl.UTF-8):	Narzędzie do szyfrowania plików
 Name:		refugee
 Version:	0.99
 Release:	3
